@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+    ______     _            ____            
+   / ____/____(_)   _____  / / /_____  ____ 
+  / __/ / ___/ / | / / _ \/ / __/ __ \/ __ \
+ / /___/ /  / /| |/ /  __/ / /_/ /_/ / / / /
+/_____/_/  /_/ |___/\___/_/\__/\____/_/ /_/ 
+                                            
+-->
+<html>
+  <head lang="pt-br">
+    <meta charset="utf-8">
+    <title>Erivelton</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ "/css/estilo.css" | prepend: site.baseurl }}" data-turbolinks-eval=false>
+    <link rel="stylesheet" type="text/css" href="{{ "/css/remodal.css" | prepend: site.baseurl }}" data-turbolinks-eval=false>
+    <link rel="stylesheet" type="text/css" href="{{ "/css/remodal-default-theme.css" | prepend: site.baseurl }}" data-turbolinks-eval=false>
+    <script async defer src="{{ "/js/nprogress.min.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
+    <meta name="description" content="Confira algumas das páginas desenvolvidas por mim. Aqui disponibilizo o código fonte para você analisar, estudar ou usar em seus projetos.">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, PHP, Desenvolvimento Web">
+    <meta name="author" content="Erivelton">
+    <link href="{{ "/favicon.ico" | prepend: site.baseurl }}" rel="icon" type="image/ico">
+    <meta property="og:image" content="{{ "/img/desenvolvimento-web.jpg" | prepend: site.baseurl }}">
+  </head>
+  <body>
+  <header>
+    <div class="container">
+      <div id="nav-icon3">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="titulo">
+        <a href="{{ site.baseurl }}">
+          <h1>Erivelton</h1>
+          <h2>.com</h2>
+        </a>
+      </div>
+      <div class="redes-sociais">
+        <a href="https://www.facebook.com/profile.php?id=100009391645621"><img src="{{ "/img/facebook-icon.png" | prepend: site.baseurl }}" alt="Meu perfil no Facebook" title="Meu perfil no Facebook"></img></a>
+      </div>
+    </div>
+  </header>
+  <nav class="open">
+    <ul>
+      <li><a href="#paginas">Páginas</a></li>
+      <li><a href="#tecnologias">Tecnologias</a></li>
+      <li><a href="#sobre" target="_self">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="remodal sobre" data-remodal-id="sobre">
+      <button data-remodal-action="close" class="remodal-close"></button>
+      <figure>
+        <img src="{{ "/img/autor.jpg" | prepend: site.baseurl }}" alt="Erivelton"/>
+      </figure>
+      <p>Olá! Me chamo Erivelton, nasci em 16 de Janeiro de 1992 e moro em Teresina - Piauí. Estudo tecnologias relacionadas à programação. Sou apaixonado por programação e procuro sempre seguir os padrões atuais em meus projetos.</p>
+      <span>* As páginas aqui disponibilizadas foram desenvolvidas com intuito de praticar e compartilhar o que venho aprendendo até o momento. Pois também já esclareci muitas dúvidas estudando o código-fonte compartilhado por outras pessoas.</span>
+    </div>
+    <section id="principal">
+      <div class="container">
+        <h1 class="animated fadeInUp">Desenvolvimento Web</h1>
+        <p class="animated fadeInUp">Confira algumas das páginas desenvolvidas por mim. Aqui disponibilizo o código-fonte para você analisar, estudar ou usar em seus projetos.</p>
+      </div>
+    </section>
+    <section id="paginas">
+      <div class="container">
+        <h1 class="animated fadeInUp">Páginas</h1>
+        <div class="caixas">
+          <div class="caixa">
+            <h2>FIFA 08</h2>
+            <figure>
+              <img src="{{ "/img/fifa08.jpg" | prepend: site.baseurl }}" alt="Página do FIFA 08"/>
+            </figure>
+            <p><strong>Descrição:</strong></p>
+            <p>Página com sistema de login/cadastro de usuários e ranking desenvolvida para FIFA 08.</p>
+            <p><strong>Tecnologias:</strong></p>
+            <p>HTML5, CSS3, JavaScript (jQuery, Turbolinks) e PHP (CodeIgniter)</p>
+            <div class="botoes">
+              <a class="baixar" href="https://www.dropbox.com/s/cr104rmzxn1zyqe/fifa08.rar?dl=1">Baixar</a>
+            </div>
+          </div>
+          <div class="caixa">
+            <h2>Potplayer</h2>
+            <figure>
+              <img src="{{ "/img/potplayer.jpg" | prepend: site.baseurl }}" alt="Página do Potplayer"/>
+            </figure>
+            <p><strong>Descrição:</strong></p>
+            <p>Potplayer, um player com excelente qualidade de som e imagem.</p>
+            <p><strong>Tecnologias:</strong></p>
+            <p>HTML5, CSS3, JavaScript (jQuery) e PHP (CodeIgniter)</p>
+            <div class="botoes">
+              <a class="baixar" href="https://www.dropbox.com/s/e384rzzmmgi7csg/potplayer.rar?dl=1">Baixar</a>
+            </div>
+          </div>
+          <div class="caixa">
+            <h2>HandyCache</h2>
+            <figure>
+              <img src="{{ "/img/handycache.jpg" | prepend: site.baseurl }}" alt="Página do HandyCache"/>
+            </figure>
+            <p><strong>Descrição:</strong></p>
+            <p>HandyCache, um programa que salva o conteúdo das páginas visitadas em cache para economia de banda e melhora na velocidade de conexão.</p>
+            <p><strong>Tecnologias:</strong></p>
+            <p>HTML5, CSS3, JavaScript (jQuery) e PHP (CodeIgniter)</p>
+            <div class="botoes">
+              <a class="baixar" href="https://www.dropbox.com/s/ffobb1drn00zahh/handycache.rar?dl=1">Baixar</a>
+            </div>
+          </div>
+          <div class="caixa">
+            <h2>PES 2015</h2>
+            <figure>
+              <img src="{{ "/img/pes2015.jpg" | prepend: site.baseurl }}" alt="Página do PES 2015"/>
+            </figure>
+            <p><strong>Descrição:</strong></p>
+            <p>Página/Template desenvolvida para Pro Evolution Soccer 2015.</p>
+            <p><strong>Tecnologias:</strong></p>
+            <p>HTML5, CSS3 e JavaScript (jQuery)</p>
+            <div class="botoes">
+              <a class="baixar" href="https://www.dropbox.com/s/9jgber8ujgurk05/pes2015.rar?dl=1">Baixar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tecnologias">
+      <div class="container">
+        <h1 class="animated fadeInUp">Tecnologias / Plataformas / Frameworks que uso atualmente</h1>
+        <p class="item">HTML5</p>
+        <p class="item">CSS3</p>
+        <p class="item">Bootstrap</p>
+        <p class="item">JavaScript</p>
+        <p class="item">jQuery</p>
+        <p class="item">Vue.js</p>
+        <p class="item">NW.js</p>
+        <p class="item">PHP</p>
+        <p class="item">CodeIgniter</p>
+        <p class="item">MySQL</p>
+        <p class="item">WordPress</p>
+        <p class="item">Blogger</p>
+        <p class="item">Jekyll</p>
+      </div>
+    </section>
+    <section id="contato">
+      <div class="container">
+        <h1 class="animated fadeInUp">Contato</h1>
+        <p>Envie sua dúvida, sugestão, crítica ou elogio. Sua mensagem é importantíssima!</p>
+        <form action="https://formsubmit.io/send/eriveltonalandelon@gmail.com" class="form_contato" id="form_contato" method="post" accept-charset="utf-8">
+        <fieldset>
+        <span class="validacoes"></span><label for="nome">Nome:</label><input type="text" name="nome" value="" id="nome" placeholder="" required=""  />
+        <label for="email">E-mail:</label><input type="email" name="email" value="" id="email" placeholder="" required=""  />
+        <label for="mensagem">Mensagem:</label><textarea name="mensagem" cols="40" rows="10" id="mensagem" placeholder="" required="" ></textarea>
+        <input type="submit" name="btn_cadastro" value="Enviar"  />
+        </fieldset>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2016 - Erivelton</p>
+  </footer>
+  <script src="{{ "/js/turbolinks.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/jquery-2.1.4.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/remodal.min.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-67059182-1"]);
+      _gaq.push(["_trackPageview"]);
+      (function() {
+          var e = document.createElement("script");
+          e.type = "text/javascript";
+          e.async = true;
+          e.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+          var t = document.getElementsByTagName("script")[0];
+          t.parentNode.insertBefore(e, t)
+      })()
+  </script>
+  </body>
+</html>
