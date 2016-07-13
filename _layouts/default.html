@@ -15,7 +15,7 @@ layout: compress
     <meta charset="utf-8">
     <title>Erivelton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{ "/css/estilo.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" type="text/css" href="{{ "/css/estilo.css?=13-07-16" | prepend: site.baseurl }}">
     <script async defer src="{{ "/js/loadCSS.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
     <script async defer src="{{ "/js/cssrelpreload.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
     <link rel="preload" href="/css/estilo.css" as="style" onload="this.rel='stylesheet'">
@@ -43,16 +43,16 @@ layout: compress
         </a>
       </div>
       <div class="redes-sociais">
-        <a href="https://www.facebook.com/profile.php?id=100009391645621"><img src="{{ "/img/facebook-icon.png" | prepend: site.baseurl }}" alt="Meu perfil no Facebook" title="Meu perfil no Facebook"></img></a>
+        <a href="https://www.facebook.com/profile.php?id=100009391645621"><img lang="br" src="{{ "/img/facebook-icon.png" | prepend: site.baseurl }}" alt="Meu perfil no Facebook" title="Meu perfil no Facebook"></img></a>
       </div>
     </div>
   </header>
   <nav class="open">
     <ul>
-      <li><a href="#paginas">Páginas</a></li>
-      <li><a href="#tecnologias">Tecnologias</a></li>
-      <li><a href="#sobre" target="_self">Sobre</a></li>
-      <li><a href="#contato">Contato</a></li>
+      <li><a lang="br" href="#paginas">Páginas</a></li>
+      <li><a lang="br" href="#tecnologias">Tecnologias</a></li>
+      <li><a lang="br" href="#sobre" target="_self">Sobre</a></li>
+      <li><a lang="br" href="#contato">Contato</a></li>
     </ul>
   </nav>
   <main>
@@ -61,69 +61,82 @@ layout: compress
       <figure>
         <img src="{{ "/img/autor.jpg" | prepend: site.baseurl }}" alt="Erivelton"/>
       </figure>
-      <p>Olá! Me chamo Erivelton, nasci em 16 de Janeiro de 1992 e moro em Teresina - Piauí. Estudo tecnologias relacionadas à programação. Sou apaixonado por programação e procuro sempre seguir os padrões atuais em meus projetos.</p>
-      <span>* As páginas aqui disponibilizadas foram desenvolvidas com intuito de praticar e compartilhar o que venho aprendendo até o momento. Pois também já esclareci muitas dúvidas estudando o código-fonte compartilhado por outras pessoas.</span>
+      <p lang="br">Olá! Me chamo Erivelton, nasci em 16 de Janeiro de 1992 e moro em Teresina, Piauí. Estudo tecnologias relacionadas à programação. Sou apaixonado por programação e procuro sempre seguir os padrões atuais em meus projetos.</p>
     </div>
     <section id="principal">
       <div class="container">
-        <h1 class="animated fadeInUp">Desenvolvimento Web</h1>
-        <p class="animated fadeInUp">Confira algumas das páginas desenvolvidas por mim. Aqui disponibilizo o código-fonte para você analisar, estudar ou usar em seus projetos.</p>
+        <h1 lang="br" class="animated fadeInUp">Desenvolvimento Web</h1>
+        <p lang="br" class="animated fadeInUp">Confira algumas das páginas desenvolvidas por mim. Aqui disponibilizo o código-fonte para você analisar, estudar ou usar em seus projetos.</p>
       </div>
     </section>
     <section id="paginas">
       <div class="container">
-        <h1 class="animated fadeInUp">Páginas</h1>
+        <h1 lang="br" class="animated fadeInUp">Páginas</h1>
         <div class="caixas">
+          <div class="caixa">
+            <h2>Erivelton | Play</h2>
+            <figure>
+              <img lang="br" src="{{ "/img/erivelton-play.jpg" | prepend: site.baseurl }}" alt="Página do Erivelton | Play"/>
+            </figure>
+            <p><strong lang="br">Descrição:</strong></p>
+            <p lang="br">Uma página criada para organizar minhas músicas favoritas.</p>
+            <p><strong lang="br">Tecnologias:</strong></p>
+            <p>HTML5, CSS3, JavaScript (jQuery) <span lang="br">e</span> Jekyll</p>
+            <div class="botoes">
+              <a lang="br" href="http://play.erivelton.com">visitar</a>
+              <a lang="br" href="https://github.com/EriveltonAlandelon/play/tree/gh-pages">código-fonte</a>
+            </div>
+          </div>
           <div class="caixa">
             <h2>FIFA 08</h2>
             <figure>
-              <img src="{{ "/img/fifa08.jpg" | prepend: site.baseurl }}" alt="Página do FIFA 08"/>
+              <img lang="br" src="{{ "/img/fifa08.jpg" | prepend: site.baseurl }}" alt="Página do FIFA 08"/>
             </figure>
-            <p><strong>Descrição:</strong></p>
-            <p>Página com sistema de login/cadastro de usuários e ranking desenvolvida para FIFA 08.</p>
-            <p><strong>Tecnologias:</strong></p>
-            <p>HTML5, CSS3, JavaScript (jQuery, Turbolinks) e PHP (CodeIgniter)</p>
+            <p><strong lang="br">Descrição:</strong></p>
+            <p lang="br">Página com sistema de login/cadastro de usuários e ranking desenvolvida para FIFA 08.</p>
+            <p><strong lang="br">Tecnologias:</strong></p>
+            <p>HTML5, CSS3 (Bootstrap), JavaScript (jQuery) <span lang="br">e</span> PHP (CodeIgniter)</p>
             <div class="botoes">
-              <a class="baixar" href="https://www.dropbox.com/s/cr104rmzxn1zyqe/fifa08.rar?dl=1">Baixar</a>
+              <a lang="br" href="https://www.dropbox.com/s/cr104rmzxn1zyqe/fifa08.rar?dl=1">código-fonte</a>
             </div>
           </div>
           <div class="caixa">
             <h2>Potplayer</h2>
             <figure>
-              <img src="{{ "/img/potplayer.jpg" | prepend: site.baseurl }}" alt="Página do Potplayer"/>
+              <img lang="br" src="{{ "/img/potplayer.jpg" | prepend: site.baseurl }}" alt="Página do Potplayer"/>
             </figure>
-            <p><strong>Descrição:</strong></p>
-            <p>Potplayer, um player com excelente qualidade de som e imagem.</p>
-            <p><strong>Tecnologias:</strong></p>
-            <p>HTML5, CSS3, JavaScript (jQuery) e PHP (CodeIgniter)</p>
+            <p><strong lang="br">Descrição:</strong></p>
+            <p lang="br">Potplayer, um player com excelente qualidade de som e imagem.</p>
+            <p><strong lang="br">Tecnologias:</strong></p>
+            <p>HTML5, CSS3, JavaScript (jQuery) <span lang="br">e</span> PHP (CodeIgniter)</p>
             <div class="botoes">
-              <a class="baixar" href="https://www.dropbox.com/s/e384rzzmmgi7csg/potplayer.rar?dl=1">Baixar</a>
+              <a lang="br" href="https://www.dropbox.com/s/e384rzzmmgi7csg/potplayer.rar?dl=1">código-fonte</a>
             </div>
           </div>
           <div class="caixa">
             <h2>HandyCache</h2>
             <figure>
-              <img src="{{ "/img/handycache.jpg" | prepend: site.baseurl }}" alt="Página do HandyCache"/>
+              <img lang="br" src="{{ "/img/handycache.jpg" | prepend: site.baseurl }}" alt="Página do HandyCache"/>
             </figure>
-            <p><strong>Descrição:</strong></p>
-            <p>HandyCache, um programa que salva o conteúdo das páginas visitadas em cache para economia de banda e melhora na velocidade de conexão.</p>
-            <p><strong>Tecnologias:</strong></p>
-            <p>HTML5, CSS3, JavaScript (jQuery) e PHP (CodeIgniter)</p>
+            <p><strong lang="br">Descrição:</strong></p>
+            <p lang="br">HandyCache, um programa que salva o conteúdo das páginas visitadas em cache para economia de banda e melhora na velocidade de conexão.</p>
+            <p><strong lang="br">Tecnologias:</strong></p>
+            <p>HTML5, CSS3, JavaScript (jQuery) <span lang="br">e</span> PHP (CodeIgniter)</p>
             <div class="botoes">
-              <a class="baixar" href="https://www.dropbox.com/s/ffobb1drn00zahh/handycache.rar?dl=1">Baixar</a>
+              <a lang="br" href="https://www.dropbox.com/s/ffobb1drn00zahh/handycache.rar?dl=1">código-fonte</a>
             </div>
           </div>
           <div class="caixa">
             <h2>PES 2015</h2>
             <figure>
-              <img src="{{ "/img/pes2015.jpg" | prepend: site.baseurl }}" alt="Página do PES 2015"/>
+              <img lang="br" src="{{ "/img/pes2015.jpg" | prepend: site.baseurl }}" alt="Página do PES 2015"/>
             </figure>
-            <p><strong>Descrição:</strong></p>
-            <p>Página/Template desenvolvida para Pro Evolution Soccer 2015.</p>
-            <p><strong>Tecnologias:</strong></p>
-            <p>HTML5, CSS3 e JavaScript (jQuery)</p>
+            <p><strong lang="br">Descrição:</strong></p>
+            <p lang="br">Página/Template desenvolvida para Pro Evolution Soccer 2015.</p>
+            <p><strong lang="br">Tecnologias:</strong></p>
+            <p>HTML5, CSS3 <span lang="br">e</span> JavaScript (jQuery)</p>
             <div class="botoes">
-              <a class="baixar" href="https://www.dropbox.com/s/9jgber8ujgurk05/pes2015.rar?dl=1">Baixar</a>
+              <a lang="br" href="https://www.dropbox.com/s/9jgber8ujgurk05/pes2015.rar?dl=1">código-fonte</a>
             </div>
           </div>
         </div>
@@ -131,7 +144,7 @@ layout: compress
     </section>
     <section id="tecnologias">
       <div class="container">
-        <h1 class="animated fadeInUp">Tecnologias / Plataformas / Frameworks que uso atualmente</h1>
+        <h1 lang="br" class="animated fadeInUp">Tecnologias / Plataformas / Frameworks que uso atualmente</h1>
         <p class="item">HTML5</p>
         <p class="item">CSS3</p>
         <p class="item">Bootstrap</p>
@@ -149,14 +162,13 @@ layout: compress
     </section>
     <section id="contato">
       <div class="container">
-        <h1 class="animated fadeInUp">Contato</h1>
-        <p>Envie sua dúvida, sugestão, crítica ou elogio. Sua mensagem é importantíssima!</p>
+        <h1 lang="br" class="animated fadeInUp">Contato</h1>
         <form action="https://formsubmit.io/send/eriveltonalandelon@gmail.com" class="form_contato" id="form_contato" method="post" accept-charset="utf-8">
         <fieldset>
-        <span class="validacoes"></span><label for="nome">Nome:</label><input type="text" name="nome" value="" id="nome" placeholder="" required=""  />
-        <label for="email">E-mail:</label><input type="email" name="email" value="" id="email" placeholder="" required=""  />
-        <label for="mensagem">Mensagem:</label><textarea name="mensagem" cols="40" rows="10" id="mensagem" placeholder="" required="" ></textarea>
-        <input type="submit" name="btn_cadastro" value="Enviar"  />
+        <span class="validacoes"></span><label lang="br" for="nome">Nome:</label><input type="text" name="nome" value="" id="nome" placeholder="" required=""  />
+        <label lang="br" for="email">E-mail:</label><input type="email" name="email" value="" id="email" placeholder="" required=""  />
+        <label lang="br" for="mensagem">Mensagem:</label><textarea name="mensagem" cols="40" rows="10" id="mensagem" placeholder="" required="" ></textarea>
+        <input lang="br" type="submit" name="btn_cadastro" value="Enviar"  />
         </fieldset>
         </form>
       </div>
@@ -169,6 +181,25 @@ layout: compress
   <script src="{{ "/js/jquery-2.1.4.min.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
   <script src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "/js/remodal.min.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/js/jquery-lang.js" | prepend: site.baseurl }}" charset="utf-8" type="text/javascript" data-turbolinks-eval=false></script>
+  <script>
+    var lang = new Lang();
+    lang.dynamic('en', '/js/langpack/en.json');
+    lang.init({
+        defaultLang: 'br'
+      });
+    if(navigator.browserLanguage) {  
+    var idioma = navigator.browserLanguage;    
+    }
+    else if(navigator.language) {
+    var idioma = navigator.language;
+    }
+    if(idioma.toLowerCase() == "pt-br"){
+      window.lang.change('br');
+    }else{
+      window.lang.change('en');
+    }
+  </script>
   <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(["_setAccount", "UA-67059182-1"]);
