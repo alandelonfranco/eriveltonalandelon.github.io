@@ -201,8 +201,9 @@ layout: compress
     }
   </script>
   <script type="text/javascript">
-  setTimeout(function(){ 
-      var _gaq = _gaq || [];
+  $(function() {
+  setTimeout(function(){
+          var _gaq = _gaq || [];
       _gaq.push(["_setAccount", "UA-67059182-1"]);
       _gaq.push(["_trackPageview"]);
       (function() {
@@ -213,7 +214,8 @@ layout: compress
           var t = document.getElementsByTagName("script")[0];
           t.parentNode.insertBefore(e, t)
       })()
-  }, 900);
+  }, 600);
+});
   </script>
   </body>
 </html>
