@@ -32,13 +32,13 @@ $(document).on('page:change', function() {
 $(document).on('page:restore', function() {
   NProgress.remove();
 });
-    if (navigator.userAgent.indexOf("Google Page Speed") == -1) {
-        setTimeout(function() {
-            var e = document.getElementsByTagName("script")[0];
-            var g = document.createElement("script");
-            g.type = "text/javascript";
-            g.async = true;
-            g.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
-            e.parentNode.insertBefore(g, e);
-        }, 200);
-    }
+if (navigator.userAgent.indexOf("Google Page Speed") == -1) {
+    setTimeout(function() {
+        var e = document.getElementsByTagName("script")[0];
+        var g = document.createElement("script");
+        g.type = "text/javascript";
+        g.async = true;
+        g.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+        e.parentNode.insertBefore(g, e);
+    }, 200);
+}
