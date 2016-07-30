@@ -16,6 +16,9 @@ layout: compress
     <title>Erivelton</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="{{ "/css/estilo.css?=13-07-16" | prepend: site.baseurl }}">
+    <script async defer src="{{ "/js/loadCSS.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
+    <script async defer src="{{ "/js/cssrelpreload.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
+    <link rel="preload" href="/css/estilo.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/estilo.css"></noscript>
     <script async defer src="{{ "/js/nprogress.min.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
     <meta name="description" content="Confira algumas das páginas desenvolvidas por mim. Aqui disponibilizo o código fonte para você analisar, estudar ou usar em seus projetos.">
@@ -174,7 +177,7 @@ layout: compress
   <footer>
     <p>© 2016 - Erivelton</p>
   </footer>
-  <script src="{{ "/js/turbolinks.min.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
+  <script async defer src="{{ "/js/turbolinks.min.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
   <script src="{{ "/js/jquery-2.1.4.min.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
   <script src="{{ "/js/scripts.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "/js/remodal.min.js" | prepend: site.baseurl }}"></script>
