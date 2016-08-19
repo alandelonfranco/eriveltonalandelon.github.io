@@ -20,6 +20,7 @@ layout: compress
     <script async defer src="{{ "/js/cssrelpreload.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
     <link rel="preload" href="/css/estilo.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/estilo.css"></noscript>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <script async defer src="{{ "/js/nprogress.min.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
     <meta name="description" content="Confira algumas das páginas desenvolvidas por mim. Aqui disponibilizo o código fonte para você analisar, estudar ou usar em seus projetos.">
     <meta name="keywords" content="HTML5, CSS3, JavaScript, PHP, Desenvolvimento Web">
