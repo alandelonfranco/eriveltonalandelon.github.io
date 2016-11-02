@@ -1,6 +1,4 @@
 var files = [
-  "/",
-  "/index.html",
   "/css/estilo.css",
   "/js/loadCSS.js",
   "/js/cssrelpreload.js",
@@ -14,8 +12,7 @@ var files = [
   "/img/handycache.jpg",
   "/img/pes2015.jpg",
   "/js/app.js",
-  "/js/app-reload.js",
-  "/js/langpack/en.json"
+  "/js/app-reload.js"
 ];
 // dev only
 if (typeof files == 'undefined') {
