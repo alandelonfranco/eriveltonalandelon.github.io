@@ -9,7 +9,6 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(OFFLINE_CACHE).then(function(cache) {
       return cache.addAll([
-        OFFLINE_URL,
         '/fonts/proximanova-bold-webfont.eot',
         '/fonts/proximanova-bold-webfont.ttf',
         '/fonts/proximanova-bold-webfont.woff',
