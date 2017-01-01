@@ -75,7 +75,7 @@ self.addEventListener('fetch', function(event) {
 });
 
 function fromCache(request) {
-  return caches.open(CACHE).then(function (cache) {
+  return caches.open(OFFLINE_CACHE).then(function (cache) {
     return cache.match(request).then(function (matching) {
       return matching || Promise.reject('no-match');
     });
@@ -83,7 +83,7 @@ function fromCache(request) {
 }
 
 function update(request) {
-  return caches.open(CACHE).then(function (cache) {
+  return caches.open(OFFLINE_CACHE).then(function (cache) {
     return fetch(request).then(function (response) {
       return cache.put(request, response);
     });
