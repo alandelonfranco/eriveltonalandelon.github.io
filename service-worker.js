@@ -24,11 +24,13 @@ var files = [
   "/js/app-reload.js"
 ];
 // dev only
+/*
 if (typeof files == 'undefined') {
   var files = [];
 } else {
   files.push('./');
 }
+*/
 
 var CACHE_NAME = 'erivelton';
 
