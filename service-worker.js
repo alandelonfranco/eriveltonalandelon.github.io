@@ -9,11 +9,6 @@ self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(OFFLINE_CACHE).then(function(cache) {
       return cache.addAll([
-        '/css/estilo.css',
-        '/js/loadCSS.js',
-        '/js/cssrelpreload.js',
-        '/js/nprogress.min.js',
-        '/favicon.ico',
         '/fonts/proximanova-bold-webfont.eot',
         '/fonts/proximanova-bold-webfont.ttf',
         '/fonts/proximanova-bold-webfont.woff',
@@ -22,16 +17,7 @@ self.addEventListener('install', function(event) {
         '/fonts/proximanova-light-webfont.woff',
         '/fonts/proximanova-regular-webfont.eot',
         '/fonts/proximanova-regular-webfont.ttf',
-        '/fonts/proximanova-regular-webfont.woff',
-        '/img/facebook-icon.png',
-        '/img/autor.jpg',
-        '/img/play.jpg',
-        '/img/fifa08.jpg',
-        '/img/potplayer.jpg',
-        '/img/handycache.jpg',
-        '/img/pes2015.jpg',
-        '/js/app.js',
-        '/js/app-reload.js'
+        '/fonts/proximanova-regular-webfont.woff'
       ]);
     })
   );
