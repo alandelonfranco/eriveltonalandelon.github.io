@@ -19,7 +19,7 @@ self.addEventListener('install', function(event) {
         '/fonts/proximanova-regular-webfont.ttf',
         '/fonts/proximanova-regular-webfont.woff',
         '/img/facebook-icon.png',
-        '/'
+        '/index.html'
       ]);
     })
   );
