@@ -18,7 +18,8 @@ self.addEventListener('install', function(event) {
         '/fonts/proximanova-regular-webfont.eot',
         '/fonts/proximanova-regular-webfont.ttf',
         '/fonts/proximanova-regular-webfont.woff',
-        '/img/facebook-icon.png'
+        '/img/facebook-icon.png',
+        '/'
       ]);
     })
   );
@@ -58,11 +59,24 @@ self.addEventListener('fetch', function(event) {
   } else {
     // It’s not a request for an HTML document, but rather for a CSS or SVG
     // file or whatever…
-    event.respondWith(
-      caches.match(event.request).then(function(response) {
-        return response || fetch(event.request);
-      })
-    );
+     evt.respondWith(fromCache(evt.request));
+     evt.waitUntil(update(evt.request));
   }
 
 });
+
+function fromCache(request) {
+  return caches.open(CACHE).then(function (cache) {
+    return cache.match(request).then(function (matching) {
+      return matching || Promise.reject('no-match');
+    });
+  });
+}
+
+function update(request) {
+  return caches.open(CACHE).then(function (cache) {
+    return fetch(request).then(function (response) {
+      return cache.put(request, response);
+    });
+  });
+}
