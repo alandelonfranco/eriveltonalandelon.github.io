@@ -17,7 +17,8 @@ self.addEventListener('install', function(event) {
         '/fonts/proximanova-light-webfont.woff',
         '/fonts/proximanova-regular-webfont.eot',
         '/fonts/proximanova-regular-webfont.ttf',
-        '/fonts/proximanova-regular-webfont.woff'
+        '/fonts/proximanova-regular-webfont.woff',
+        '/img/facebook-icon.png'
       ]);
     })
   );
