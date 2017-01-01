@@ -34,21 +34,6 @@ self.addEventListener('install', function(event) {
   );
 });
 
-self.addEventListener('activate', function(event) {
-  // Delete old asset caches.
-  event.waitUntil(
-    caches.keys().then(function(keys) {
-      return Promise.all(
-        keys.map(function(key) {
-          if (key != OFFLINE_CACHE) {
-            return caches.delete(key);
-          }
-        })
-      );
-    })
-  );
-});
-
 self.addEventListener('fetch', function(event) {
   if (event.request.mode == 'navigate') {
     console.log(`Handling fetch event for ${ event.request.url }`);
@@ -68,15 +53,19 @@ self.addEventListener('fetch', function(event) {
   } else {
     // It’s not a request for an HTML document, but rather for a CSS or SVG
     // file or whatever…
-      event.respondWith(
-        caches.match(event.request).then(function(response) {
-          return response || fetch(event.request);
-        })
-      );
-      evt.waitUntil(update(evt.request));
+     evt.respondWith(fromCache(evt.request));
+     evt.waitUntil(update(evt.request));
   }
 
 });
+
+function fromCache(request) {
+  return caches.open(OFFLINE_CACHE).then(function (cache) {
+    return cache.match(request).then(function (matching) {
+      return matching || Promise.reject('no-match');
+    });
+  });
+}
 
 function update(request) {
   return caches.open(OFFLINE_CACHE).then(function (cache) {
