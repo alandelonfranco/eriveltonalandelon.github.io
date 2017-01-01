@@ -33,8 +33,6 @@ function precache() {
       './fonts/proximanova-regular-webfont.eot',
       './fonts/proximanova-regular-webfont.ttf',
       './fonts/proximanova-regular-webfont.woff',
-      '/',
-      './index.html',
       './js/nprogress.min.js',
       './img/facebook-icon.png',
       './img/autor.jpg',
