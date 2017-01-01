@@ -20,7 +20,7 @@ self.addEventListener('install', function(event) {
         '/fonts/proximanova-regular-webfont.ttf',
         '/fonts/proximanova-regular-webfont.woff',
         '/index.html',
-        '/js/nprogress.min.js'
+        '/js/nprogress.min.js',
         '/img/facebook-icon.png',
         '/img/autor.jpg',
         '/img/play.jpg',
