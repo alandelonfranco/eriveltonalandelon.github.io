@@ -22,6 +22,27 @@ layout: compress
   -ms-transition: .7s;
   transition: .7s;
 }
+@font-face {
+  font-family:'ProximaNovaBold';
+  src:url("/fonts/proximanova-bold-webfont.eot");
+  src:url("/fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"),url("/fonts/proximanova-bold-webfont.woff") format("woff"),url("/fonts/proximanova-bold-webfont.ttf") format("truetype"),url("/fonts/proximanova-bold-webfont.svg#ProximaNovaBold") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:'ProximaNovaRegular';
+  src:url("/fonts/proximanova-regular-webfont.eot");
+  src:url("/fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"),url("/fonts/proximanova-regular-webfont.woff") format("woff"),url("/fonts/proximanova-regular-webfont.ttf") format("truetype"),url("/fonts/proximanova-regular-webfont.svg#ProximaNovaRegular") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face {
+  font-family:'ProximaNovaLight';
+  src:url("/fonts/proximanova-light-webfont.eot");
+  src:url("/fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"),url("/fonts/proximanova-light-webfont.woff") format("woff"),url("/fonts/proximanova-light-webfont.ttf") format("truetype"),url("/fonts/proximanova-light-webfont.svg#ProximaNovaLight") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
 body {
   font-family: "ProximaNovaRegular";
 }
@@ -4436,24 +4457,6 @@ Copyright (c) 2015 Daniel Eden
   animation-name: slideOutUp;
 }
     </style>
-    <link
-href="{{ "/fonts/proximanova-bold-webfont.eot" | prepend: site.baseurl }}" rel="preload" as="font" type="font/eot">
-    <link
-href="{{ "/fonts/proximanova-bold-webfont.ttf" | prepend: site.baseurl }}" rel="preload" as="font" type="font/ttf">
-    <link
-href="{{ "/fonts/proximanova-bold-webfont.woff" | prepend: site.baseurl }}" rel="preload" as="font" type="font/woff">
-    <link
-href="{{ "/fonts/proximanova-light-webfont.eot" | prepend: site.baseurl }}" rel="preload" as="font" type="font/eot">
-    <link
-href="{{ "/fonts/proximanova-light-webfont.ttf" | prepend: site.baseurl }}" rel="preload" as="font" type="font/ttf">
-    <link
-href="{{ "/fonts/proximanova-light-webfont.woff" | prepend: site.baseurl }}" rel="preload" as="font" type="font/woff">
-    <link
-href="{{ "/fonts/proximanova-regular-webfont.eot" | prepend: site.baseurl }}" rel="preload" as="font" type="font/eot">
-    <link
-href="{{ "/fonts/proximanova-regular-webfont.ttf" | prepend: site.baseurl }}" rel="preload" as="font" type="font/ttf">
-    <link
-href="{{ "/fonts/proximanova-regular-webfont.woff" | prepend: site.baseurl }}" rel="preload" as="font" type="font/woff">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <script async defer src="{{ "/js/nprogress.min.js" | prepend: site.baseurl }}" data-turbolinks-eval=false></script>
     <meta name="description" content="Confira algumas das páginas desenvolvidas por mim. Aqui disponibilizo o código fonte para você analisar, estudar ou usar em seus projetos.">
